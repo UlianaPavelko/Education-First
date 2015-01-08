@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+    <head>
+        <title>Education First</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+        <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+        <link href='http://fonts.googleapis.com/css?family=Arapey:400,400italic' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="styles/css/custom.css">
+    </head>
+    <body>
+        <header class="container">
+            <div class="header-wrap">    
+                <div class="row">
+                    <div class="logo col-md-6 col-sm-6 col-xs-6">
+                        <div class="pull-right">
+                            <img alt="EF Education First" src="img/logo.png">    
+                        </div>
+                    </div>
+                    <div class="col-lg-pull-1 col-md-pull-1 col-sm-pull-1 col-xs-pull-1"></div>
+                    <div class="slog col-md-5 col-sm-5 col-xs-5">
+                        <h1 class="text-left text-capitalize">Developer<br/>Test</h1>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-sm-12 hidden-xs"> 
+                    <div class="my-carousel" ng-controller="carouselCtrl">
+                        <carousel>
+                            <slide ng-repeat="slide in slides" active="slide.active">
+                                <img ng-src="{{slide.src}}" style="margin:auto;">
+                                <div class="carousel-caption">
+                                    <h2 class="text-uppercase">{{slide.title}}</h2>
+                                </div>
+                            </slide>
+                        </carousel>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <main class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                    <img class="img-responsive" alt="EF Education First" src="img/contentImg.jpg">   
+                </div>
+                <article class="col-md-6 col-sm-6 col-xs-12">
+                    <div class="marged-top-lg">
+                        <h4 class="text-uppercase secondary-text">Language</h4>
+                        <p class="marged-top-sm date secondary-text">September 21. 2013</p>
+                        <h3 class="clear-margin-top text-uppercase">How to prepare your CV in English?</h3>
+                        <p class="marged-top-sm text-capitalize">By 
+                            <span class="secondary-text">Andrew Wallers</span>
+                        </p>
+                        <span class="separator-small"></span>
+                        <p class="marged-top-sm">
+                            Jango amidala lando leia tusken raider anakin kessel.
+                            Moff sith skywalker hutt. Alderaan solo jango kashyyyk.
+                            Darth ben jar amidala moff windu fett mace. 
+                        </p>   
+                    </div>
+                    <button class="text-uppercase">Read More 
+                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    </button>
+                </article>
+            </div>
+            <div class="marged-top-lg row">
+                <section class="col-md-6 col-sm-6 col-xs-12">
+                    <h1>Lorem Ipsum</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Nulla adipiscing purus tortor, a rhoncus orci ullamcorper at.
+                        Aenean id metus nec dui elementum posuere. Pellentesque posuere nibh ut magna posuere, 
+                        non ullamcorper enim pretium. Donec hendrerit nibh in vestibulum lacinia. 
+                        Quisque fringilla mattis urna, nec iaculis sapien hendrerit ut.
+                        Nam luctus lectus sed mauris tincidunt viverra. 
+                        Integer et turpis viverra, sollicitudin dolor vel, placerat dolor.
+                        Nunc at lorem porttitor, venenatis tortor vulputate, cursus nibh.
+                    </p> 
+                    <p>
+                        Nulla adipiscing purus tortor, a rhoncus orci ullamcorper at.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Nulla adipiscing purus tortor, a rhoncus orci ullamcorper at.
+                        Aenean id metus nec dui elementum posuere. Pellentesque posuere nibh ut magna posuere, 
+                        non ullamcorper enim pretium. Donec hendrerit nibh in vestibulum lacinia. 
+                        Quisque fringilla mattis urna, nec iaculis sapien hendrerit ut.
+                        Nam luctus lectus sed mauris tincidunt viverra. 
+                        Integer et turpis viverra, sollicitudin dolor vel, placerat dolor.
+                        Nunc at lorem porttitor, venenatis tortor vulputate, cursus nibh.  
+                    </p>
+                    <p>
+                        Aenean id metus nec dui elementum posuere. Pellentesque posuere nibh ut magna posuere, 
+                        non ullamcorper enim pretium. Donec hendrerit nibh in vestibulum lacinia. 
+                        Quisque fringilla mattis urna, nec iaculis sapien hendrerit ut.
+                        Nam luctus lectus sed mauris tincidunt viverra. 
+                        Integer et turpis viverra, sollicitudin dolor vel, placerat dolor.   
+                    </p>
+                </section>
+                <section class="col-md-6 col-sm-6 col-xs-12">
+                    <blockquote class="quote">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        Nulla adipiscing purus tortor, a rhoncus orci ullamcorper at. 
+                    </blockquote> 
+                </section>
+            </div>
+        </main>
+        <div class="phone-wrap">
+            <div class="container">
+                <div class="row">
+                    <div class=" col-md-12 col-sm-12 col-xs-12">
+                        <div class="centered">
+                            <p class="phone pull-left">02073418777</p>
+                        </div>
+                    </div>    
+                </div>  
+            </div>
+        </div>
+        <footer id="footer-wrap">
+            <div class="container">
+                <div class="footer-block col-md-4 col-sm-4 col-xs-12">
+                    <p class="footer-heading">Address</p>
+                    <ul class="company-address list-unstyled text-italic">
+                        <li class="">London</li>
+                        <li>22 Chelsea Manor Street</li>
+                        <li>London SW3 5RL</li>
+                        <li>02073418777</li>
+                    </ul>
+                </div>
+                <div class="footer-block special col-md-4 col-sm-4 col-xs-12">
+                    <p class="footer-heading">Stay Connected</p>
+                    <ul class="list-inline">
+                        <li>
+                            <a class="icon-holder">
+                                <i class="fa fa-facebook"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="icon-holder">
+                                <i class="fa fa-map-marker"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="icon-holder">
+                                <i class="fa fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="icon-holder">
+                                <i class="fa fa-play"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-block col-md-4 col-sm-4 col-xs-12">
+                    <div class="country-changer">
+                        <p class="text-capitalize">Change Country</p>  
+                    </div>   
+                </div>
+            </div>
+        </footer>
+        <script src="bower_components/angular/angular.min.js"></script>
+        <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+        <script src="scripts/app.js"></script>
+    </body>
+</html>
