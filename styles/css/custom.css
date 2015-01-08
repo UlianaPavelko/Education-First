@@ -1,0 +1,174 @@
+body {
+  font-weight: 300;
+  color: #000; }
+  body h1 {
+    margin-bottom: 20px; }
+  body h2 {
+    font-size: 18px; }
+  body h3 {
+    font-size: 16px; }
+  body h4 {
+    font-size: 14px; }
+  body p {
+    margin-bottom: 20px;
+    color: #1a1a1a;
+    line-height: 150%; }
+  body .date {
+    margin-bottom: 0; }
+  body button {
+    background: none;
+    border: none;
+    font-size: 12px;
+    font-weight: 500; }
+    body button:hover {
+      color: #999999; }
+
+/*---HEADER---*/
+.header-wrap {
+  margin: 15px 0; }
+
+.slog {
+  margin: 40px 0 0 0;
+  padding-left: 0; }
+  .slog h1 {
+    font-size: 24px;
+    font-style: italic; }
+
+.logo {
+  background: url("../../img/icons/logoSeparator.png");
+  background-repeat: no-repeat;
+  background-position: top right; }
+  .logo img {
+    margin: 0 0 45px 0; }
+
+/*---CAROCEL---*/
+.my-carousel {
+  width: 100%; }
+  .my-carousel .left {
+    background: url("../../img/icons/arowLeft.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    left: -12%; }
+  .my-carousel .right {
+    background: url("../../img/icons/arowRight.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    right: -12%; }
+  .my-carousel .carousel-caption {
+    top: 200px; }
+    .my-carousel .carousel-caption h2 {
+      font-size: 24px; }
+  .my-carousel .glyphicon {
+    display: none; }
+  .my-carousel .item {
+    width: 100%; }
+    .my-carousel .item img {
+      width: 100%; }
+
+/*---MAIN---*/
+.secondary-text {
+  color: #999999; }
+
+.marged-top-lg {
+  margin-top: 30px; }
+
+.marged-top-sm {
+  margin-top: 20px; }
+
+.clear-margin-top {
+  margin-top: 0; }
+
+.separator-small {
+  width: 50px;
+  border-bottom: 1px solid #cccccc;
+  display: block; }
+
+.quote {
+  font-family: 'Arapey', serif;
+  font-size: 35px;
+  font-weight: 300;
+  line-height: 110%;
+  font-style: italic;
+  border-bottom: 1px solid #000;
+  border-top: 1px solid #000;
+  border-left: none;
+  margin: 85px 20px;
+  padding: 40px 0; }
+
+.phone-wrap {
+  background-color: #F1EAE0;
+  padding: 10px 0; }
+
+.centered {
+  width: 220px;
+  margin: 20px auto 20px auto;
+  background: url("../../img/icons/phoneIcon.png");
+  background-repeat: no-repeat;
+  background-position: left;
+  overflow: hidden; }
+  .centered .phone {
+    margin: 0 0 0 65px;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 50px; }
+
+/*---FOOTER---*/
+#footer-wrap {
+  background: #000;
+  padding: 20px 0;
+  color: #F1EAE0; }
+  #footer-wrap p {
+    color: #F1EAE0;
+    font-weight: 400; }
+  #footer-wrap .country-changer {
+    background-image: url(../../img/icons/flag.png);
+    background-repeat: no-repeat;
+    position: left;
+    height: 20px; }
+    #footer-wrap .country-changer p {
+      margin-left: 20px;
+      font-size: 12px;
+      line-height: 12px;
+      font-weight: 200; }
+
+@media (max-width: 768px) {
+  .footer-block {
+    text-align: center; }
+
+  .special {
+    border-bottom: 1px solid #333333;
+    border-top: 1px solid #333333; } }
+.footer-block {
+  padding: 20px 0; }
+
+.company-address {
+  font-family: 'Arapey', serif;
+  font-style: italic;
+  font-size: 16px;
+  color: #d1ba9a; }
+
+.icon-holder {
+  background: #262626;
+  -webkit-border-radius: 200px;
+  border-radius: 200px;
+  background-clip: padding-box;
+  color: #d1ba9a;
+  display: inline-block;
+  height: 36px;
+  width: 36px;
+  line-height: 36px;
+  transition: all 0.4s ease-out 0s;
+  text-decoration: none; }
+  .icon-holder:hover {
+    color: #d1ba9a;
+    background: #333333; }
+  .icon-holder i {
+    display: inline-block;
+    font-size: 20px;
+    height: 36px;
+    line-height: 36px;
+    padding: 0;
+    text-align: center;
+    width: 36px; }
+
+/*# sourceMappingURL=custom.css.map */

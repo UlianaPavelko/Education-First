@@ -1,0 +1,212 @@
+$mainColor: #000;
+$secondaryColor: #F1EAE0;
+
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+    border-radius: $radius;
+    background-clip: padding-box;
+}
+
+body{
+    font-weight: 300;
+    color: $mainColor;
+    h1{
+        margin-bottom: 20px;
+    }
+    h2{
+        font-size: 18px; 
+    }
+    h3{
+        font-size: 16px;
+    }
+    h4{
+        font-size: 14px;
+    }
+    p{
+        margin-bottom: 20px;
+        color:  lighten($mainColor, 10%);
+        line-height: 150%;
+    }
+    .date{
+        margin-bottom: 0;
+    }
+    button{
+        background: none;
+        border: none;
+        font-size: 12px;
+        font-weight: 500;
+        &:hover{
+            color: lighten($mainColor,60%);
+        }
+    }
+}
+/*---HEADER---*/
+.header-wrap{
+    margin: 15px 0;
+}
+.slog{
+    margin: 40px 0 0 0;
+    padding-left: 0;
+    h1{
+        font-size: 24px;
+        font-style: italic;
+    }
+}
+.logo{
+    background: url("../../img/icons/logoSeparator.png");
+    background-repeat: no-repeat;
+    background-position: top right;
+    img{
+        margin: 0 0 45px 0;
+    }
+}
+/*---CAROCEL---*/
+.my-carousel{
+    width:100%;
+    .left{
+        background: url("../../img/icons/arowLeft.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        left: -12%;
+    }
+    .right{
+        background: url("../../img/icons/arowRight.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        right: -12%;
+    }
+    .carousel-caption{
+        h2{
+            font-size: 24px;
+        }
+        top: 200px;
+    }
+    .glyphicon{
+        display: none;
+    }
+    .item{
+        img{
+            width: 100%;  
+        }
+        width: 100%;
+    }
+}
+/*---MAIN---*/
+.secondary-text{
+    color: lighten($mainColor,60%);
+
+}
+.marged-top-lg{
+    margin-top: 30px;
+}
+.marged-top-sm{
+    margin-top: 20px; 
+}
+.clear-margin-top{
+    margin-top: 0;
+}
+.separator-small{
+    width: 50px;
+    border-bottom: 1px solid lighten($mainColor,80%);
+    display: block;
+}
+.quote{
+    font-family: 'Arapey', serif;
+    font-size: 35px;
+    font-weight: 300;
+    line-height: 110%;
+    font-style: italic;
+    border-bottom: 1px solid $mainColor;
+    border-top: 1px solid $mainColor;
+    border-left: none;
+    margin: 85px 20px;
+    padding: 40px 0;
+
+}
+.phone-wrap{
+    background-color: $secondaryColor;
+    padding: 10px 0;
+}
+.centered{
+    width: 220px;
+    margin: 20px auto 20px auto;
+    background: url("../../img/icons/phoneIcon.png");
+    background-repeat: no-repeat;
+    background-position: left;
+    overflow: hidden;
+    .phone{
+        margin: 0 0 0 65px;
+        font-weight: bold;
+        font-size: 25px;
+        line-height: 50px;
+    }
+}
+/*---FOOTER---*/
+#footer-wrap{
+    background: $mainColor;
+    padding: 20px 0;
+    color: $secondaryColor;
+    p{
+        color: $secondaryColor;  
+        font-weight: 400;
+    }
+    .country-changer{
+        background-image: url(../../img/icons/flag.png);
+        background-repeat: no-repeat;
+        position: left;
+        height: 20px;
+        p{
+            margin-left: 20px;  
+            font-size: 12px;
+            line-height: 12px;
+            font-weight: 200;
+        }
+    }
+
+}
+ @media (max-width: 768px) {
+    .footer-block {
+        text-align: center;
+    }
+    .special{
+        border-bottom: 1px solid lighten($mainColor, 20%);
+        border-top: 1px solid lighten($mainColor, 20%);
+    }
+  }
+  .footer-block{
+    
+      padding: 20px 0;
+  }
+.company-address{
+    font-family: 'Arapey', serif;
+    font-style: italic;
+    font-size: 16px;
+    color: darken($secondaryColor, 20%);
+}
+.icon-holder{
+    &:hover{
+        color: darken($secondaryColor, 20%);
+        background: lighten($mainColor, 20%);
+    }
+    background: lighten($mainColor, 15%);
+    @include border-radius(200px);
+    color: darken($secondaryColor, 20%);
+    display: inline-block;
+    height: 36px;
+    width: 36px;
+    line-height: 36px;
+    transition: all 0.4s ease-out 0s;
+    text-decoration: none;
+    i{
+        display: inline-block;
+        font-size: 20px;
+        height: 36px;
+        line-height: 36px;
+        padding: 0;
+        text-align: center;
+        width: 36px;
+    }  
+}
+
+
+
